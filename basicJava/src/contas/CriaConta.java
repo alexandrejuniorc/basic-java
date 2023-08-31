@@ -6,16 +6,16 @@ public class CriaConta {
 
 		Conta primeiraConta = new Conta();
 
-		primeiraConta.saldo = 200;
-		System.out.println("O saldo da primeira conta é: " + primeiraConta.saldo + " reais!");
+		primeiraConta.deposita(200);
+		System.out.println("O saldo da primeira conta é: " + primeiraConta.getSaldo() + " reais!");
 
-		primeiraConta.saldo += 100;
-		System.out.println(primeiraConta.saldo);
+		primeiraConta.deposita(100);
+		System.out.println(primeiraConta.getSaldo());
 
 		Conta segundaConta = new Conta();
 
-		segundaConta.saldo = 50;
-		System.out.println("O saldo da segunda conta é: " + segundaConta.saldo + " reais!");
+		segundaConta.deposita(50);
+		System.out.println("O saldo da segunda conta é: " + segundaConta.getSaldo() + " reais!");
 
 	}
 

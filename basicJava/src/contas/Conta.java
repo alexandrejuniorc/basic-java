@@ -5,10 +5,14 @@ import cliente.Cliente;
 // saldo, agência, número e titular
 public class Conta extends Cliente {
 
-	double saldo;
+	private double saldo;
 	int agencia;
 	int numero;
 	public Cliente titular;
+
+	public double getSaldo() {
+		return this.saldo;
+	}
 
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -35,4 +39,5 @@ public class Conta extends Cliente {
 		}
 
 	}
+
 }
